@@ -1,0 +1,6 @@
+\section{Conclusion}
+The experiments showed that the exoskeleton can follow a path, but it isn't perfect. In the time response test, we saw that the general motion was correct, but there were some large downward spikes in the data. This looks like a sensor issue or a loose connection rather than a problem with the control logic itself.
+
+When we looked at the frequency response (Bode plot), we noticed the real system had a much higher gain than our theoretical model assumed ($K=1$). The phase lag also dropped off faster than expected at higher frequencies, suggesting the real hardware has extra delays we didn't account for.
+
+Finally, we calculated a bandwidth of about 1.6 Hz. This is fine for slow, voluntary movements, but it would be too slow to handle fast reflexes or tremors. If we wanted to use this for more dynamic tasks, we would need to tune the controller to respond faster.
